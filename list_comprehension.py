@@ -4,9 +4,12 @@ if __name__ == '__main__':
     z = int(input())
     n = int(input())
 
-new_coordinates = []
-for i in range(x+1):
-    for j in range(y+1):
-        for k in range(z+1):
-            if (i+j+k) != n:
-                new_coordinates.append([i,j,k])
+# new_coordinates = []
+# for i in range(x+1):
+#     for j in range(y+1):
+#         for k in range(z+1):
+#             if (i+j+k) != n:
+#                 new_coordinates.append([i,j,k])
+# list_comprehension
+new_coordinates = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if (i+j+k)!=n]
+print(new_coordinates)
