@@ -7,6 +7,8 @@ for x in range(N):
     enter_value = input().split()
     if enter_value[0] == 'insert':
         list_functions.insert(int(enter_value[1]), int(enter_value[2]))
+    elif enter_value[0] == 'print':
+        print(list_functions)
     elif enter_value[0] == 'remove':
         list_functions.remove(int(enter_value[1]))
     elif enter_value[0] == 'append':
