@@ -11,4 +11,4 @@ if __name__ == '__main__':
     query_name = input()
     student_score = student_marks.get(query_name)
     query_name=(sum(student_score)/len(student_score))
-    print("average of student marks is: ",(query_name))
+    print(f"{query_name:.2f}")
